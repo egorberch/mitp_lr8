@@ -1,0 +1,16 @@
+[flake8]
+max-line-length = 79
+
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    ENV,
+    data,
+    build,
+    dist,
+    .pytest_cache
+
+show-source = True
+statistics = True

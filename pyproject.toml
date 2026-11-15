@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mitp-lr8"
+version = "0.1.0"
+description = "Лабораторная работа №8: Экосистемы Python, их использование"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Берченёв Егор Константинович" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "flake8>=7.0.0",
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+addopts = "-q"
